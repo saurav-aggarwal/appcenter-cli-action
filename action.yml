@@ -17,5 +17,5 @@ runs:
   args:
     - ${{ inputs.command }}
     - ${{ inputs.token }}
-    - ${{ inputs.node}}
+    - ${{ inputs.node-version}}
 
