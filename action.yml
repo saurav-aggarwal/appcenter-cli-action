@@ -1,0 +1,21 @@
+name: 'App Center CLI with custom Node Version'
+description: 'GitHub Action to use any App Center CLI command'
+author: 'Saurav Aggarwal'
+inputs: 
+  command:
+    description: 'The full App Center CLI command'
+    required: true 
+  token:
+    description: 'Upload token - you can get one from appcenter.ms/settings'
+    required: true 
+branding:
+  color: 'red' 
+  icon: 'send'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
+    - ${{ inputs.token }}
+    - ${{ inputs.node}}
+
