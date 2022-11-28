@@ -1,2 +1,2 @@
 #!/bin/sh
-$INPUT_COMMAND --token "$INPUT_TOKEN"
+nvm i $INPUT_NODE && $INPUT_COMMAND --token "$INPUT_TOKEN"

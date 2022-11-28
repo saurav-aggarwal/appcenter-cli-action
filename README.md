@@ -9,6 +9,10 @@ This action run any App Center CLI command.
 **Required** The full command you want to use:
 https://github.com/microsoft/appcenter-cli
 
+### `node`
+
+**Required** Node Version for the container
+
 ### `token`
 
 **Required** App Center token - you can get one from appcenter.ms/settings
